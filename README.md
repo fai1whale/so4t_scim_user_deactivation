@@ -35,7 +35,7 @@ You can find a CSV template [here](https://github.com/jklick-so/so4t_scim_user_d
 The script will read the CSV and deactivate each user in the list. If the user is not found, the script will skip to the next user and print a message to the console.
 
 In a terminal window, navigate to the directory where you unpacked the script. Run the script with the `--csv` flag, replacing the URL, token, and path to CSV file with your own:
-* For Basic and Business: `python3 so4t_scim_user_deactivation.py --url "https://stackoverflowteams.com/c/TEAM-NAME" --token "YOUR_TOKEN" --csv users.csv`
+* For Basic and Business: `python3 so4t_scim_user_deactivation.py --url "https://stackoverflowteams.com/c/TEAM-NAME" --token "YOUR_SCIM_TOKEN" --csv users.csv`
 * For Enterprise: `python3 so4t_scim_user_deactivation.py --url "https://SUBDOMAIN.stackenterprise.co" --token "YOUR_SCIM_TOKEN" --csv users.csv`
 
 > If API requests to the Stack Overflow for Teams server need to be made through a proxy, you can use the `--proxy` flag to specify the proxy URL. Example: `python3 so4t_tag_report.py --url "https://SUBDOMAIN.stackenterprise.co" --token "YOUR_SCIM_TOKEN" --proxy "PROXY.EXAMPLE.COM:PORTNUMBER"`
